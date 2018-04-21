@@ -56,7 +56,7 @@
                 <!-- LOGO -->
                 <div class="topbar-left">
                     <div class="text-center">
-                        <a href="index.html" class="logo"><i class="icon-c-logo">IN</i><span>INVENTORY</span></a>
+                        <a href="index.html" class="logo"><i class="icon-c-logo">IVT</i><span>INVENTORY</span></a>
                         <!-- Image Logo here -->
                         <!--<a href="index.html" class="logo">-->
                             <!--<i class="icon-c-logo"> <img src="<?php echo base_url(); ?>assets/images/logo_sm.png" height="42"/> </i>-->
@@ -214,7 +214,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-database"></i> <span> Data Barang </span> </a>   
+                                <a href="<?php echo site_url('app/barang') ?>" class="waves-effect"><i class="fa fa-database"></i> <span> Data Barang </span> </a>   
                             </li>
 
                             <li class="has_sub">
@@ -257,7 +257,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-sign-out"></i><span> Logout </span></a>
+                                <a href="<?php echo base_url('auth/logout') ?>" class="waves-effect"><i class="fa fa-sign-out"></i><span> Logout </span></a>
                             </li>
 
                             <li class="text-muted menu-title">Information</li>
