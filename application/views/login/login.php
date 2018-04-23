@@ -52,7 +52,11 @@
 
                 <div class="panel-body">
                     <form class="form-horizontal m-t-20" action="<?php echo base_url('auth/login'); ?>" method="post">
-
+                         <?php
+                              if(isset($error)){
+                                echo "<div class='alert alert-danger'><a href=''#'' class='close' data-dismiss='alert' aria-label='close' title='close'>×</a>$error</div>";
+                              }
+                          ?>
                         <div class="form-group ">
                             <div class="col-xs-12">
                                 <input class="form-control" type="text" required="" placeholder="Username" name="username">

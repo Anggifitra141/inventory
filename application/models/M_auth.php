@@ -8,9 +8,9 @@ class M_auth extends CI_model
 		parent::__construct();
 	}
 
-	public function login($username, $password)
+	public function login($table, $where)
 	{
-		
+		return $this->db->get_where($table, $where);
 	}
 	
 }

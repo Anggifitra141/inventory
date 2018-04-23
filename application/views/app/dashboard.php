@@ -64,7 +64,7 @@
                         <div class="row">
 
                           <!--  Line Chart -->
-                          <div class="col-md-12">
+                          <div class="col-md-9">
                             <div class="portlet">
                               <!-- /primary heading -->
                               <div class="portlet-heading">
@@ -93,10 +93,32 @@
                                       </li>
                                     </ul>
                                   </div>
-                                  <div id="morris-line-example" style="height: 300px;"></div>
+                                  <div id="morris-line-example" style="height: 200px;"></div>
                                 </div>
                               </div>
                             </div>
                           </div>
+
+                          <div class="col-md-3">
+                            <div class="card-box">
+                              <h4 class="text-dark header-title m-t-0 m-b-30">Profit</h4>
+                              <div class="widget-chart text-center">
+                                  <h4 class="text-muted m-t-20">Total profit keuntungan</h4>
+                                  <h1 class="font-600">$75</h1>
+                                  <ul class="list-inline m-t-15">
+                                    <li>
+                                      <h5 class="text-muted m-t-20">bulan lalu</h5>
+                                      <h4 class="m-b-0">$1000</h4>
+                                    </li>
+                                    <li>
+                                      <h5 class="text-muted m-t-20">bulan ini</h5>
+                                      <h4 class="m-b-0">$523</h4>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+
+                            </div>
                         </div>
                         <!-- end row -->
+

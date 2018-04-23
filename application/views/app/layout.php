@@ -2,47 +2,43 @@
 <html>
     
 <!-- Mirrored from coderthemes.com/ubold_2.2/light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Mar 2017 14:04:56 GMT -->
-<head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
-        <meta name="author" content="Coderthemes">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
 
-        <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/favicon_1.ico">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/favicon_1.ico">
 
-        <title>Inventory Barang</title>
+    <title>Inventory Barang</title>
 
-        <!--Morris Chart CSS -->
-		    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/morris/morris.css">
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/morris/morris.css">
 
-        <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url(); ?>assets/css/core.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url(); ?>assets/css/components.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url(); ?>assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url(); ?>assets/css/pages.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url(); ?>assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- DataTables -->
+    <link href="<?php echo base_url();?>assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo base_url();?>assets/plugins/datatables/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
-        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="<?php echo base_url(); ?>https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="<?php echo base_url(); ?>https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
 
-        <script src="<?php echo base_url(); ?>assets/js/modernizr.min.js"></script>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+    <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/css/responsive.css" rel="stylesheet" type="text/css" />
 
-          ga('create', 'UA-69506598-1', 'auto');
-          ga('send', 'pageview');
-        </script>
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="<?php echo base_url(); ?>https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="<?php echo base_url(); ?>https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="<?php echo base_url(); ?>assets/js/modernizr.min.js"></script>
 
 
 
-    </head>
+  </head>
 
 
     <body class="fixed-left">
@@ -210,18 +206,18 @@
                         	<li class="text-muted menu-title">Main Navigation</li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="active"><i class="fa fa-home"></i> <span> Dashboard </span></a>
+                                <a href="javascript:void(0);" class="<?php echo isset ($active) ? $active : ""; ?>"><i class="fa fa-home"></i> <span> Dashboard </span></a>
                             </li>
 
                             <li class="has_sub">
-                                <a href="<?php echo site_url('app/barang') ?>" class="waves-effect"><i class="fa fa-database"></i> <span> Data Barang </span> </a>   
+                                <a href="<?php echo base_url('app/barang') ?>" class="waves-effect"><i class="fa fa-database"></i> <span> Data Barang </span> </a>   
                             </li>
 
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-shopping-cart"></i><span> Pembelian </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href="tables-basic.html">Data pembelian</a></li>
-                                    <li><a href="tables-datatable.html">Rekap Transaksi</a></li>
+                                    <li><a href="tables-datatable.html">Transaksi Pembelian</a></li>
                                 </ul>
                             </li>
 
@@ -229,12 +225,12 @@
                                 <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-shopping-cart"></i> <span> Penjualan </span><span class="menu-arrow"></span> </a>
                                 <ul class="list-unstyled">
                                     <li><a href="tables-basic.html">Data Penjualan</a></li>
-                                    <li><a href="tables-datatable.html">Rekap Transaksi</a></li>
+                                    <li><a href="tables-datatable.html">Transaksi penjualan</a></li>
                                 </ul>
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-university"></i><span> Supplier </span> </a>
+                                <a href="<?php echo site_url('app/supplier'); ?>" class="waves-effect"><i class="fa fa-university"></i><span> Supplier </span> </a>
                             </li>
 
                             <li class="has_sub">
@@ -431,12 +427,17 @@
         <script src="<?php echo base_url(); ?>assets/js/jquery.blockUI.js"></script>
         <script src="<?php echo base_url(); ?>assets/js/wow.min.js"></script>
 
-        <!-- Morris Chart -->
         <!--Morris Chart-->
         <script src="<?php echo base_url(); ?>assets/plugins/morris/morris.min.js"></script>
         <script src="<?php echo base_url(); ?>assets/plugins/raphael/raphael-min.js"></script>
         <script src="<?php echo base_url(); ?>assets/pages/morris.init.js"></script>
         <script src="<?php echo base_url(); ?>assets/plugins/jquery-knob/jquery.knob.js"></script>
+
+        <!--datatables-->
+        <script src="<?php echo base_url();?>assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="<?php echo base_url();?>assets/plugins/datatables/dataTables.bootstrap.js"></script>
+
+        <script src="<?php echo base_url();?>assets/pages/datatables.init.js"></script>
 
         <script src="<?php echo base_url(); ?>assets/pages/jquery.dashboard.js"></script>
 
@@ -453,6 +454,7 @@
                 $(".knob").knob();
 
             });
+
         </script>
 
 
