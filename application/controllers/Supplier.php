@@ -25,6 +25,7 @@ class Supplier extends CI_Controller {
 	public function tambah_supplier()
 	{
 		$data = array(
+			'kd_supplier' => $this->input->post('kd_supplier'),
 			'nama' => $this->input->post('nama'),
 			'alamat' => $this->input->post('alamat'),
 			'ket' => $this->input->post('ket')
@@ -33,26 +34,27 @@ class Supplier extends CI_Controller {
 		echo json_encode(array("status" => TRUE));
 	}
 
-	public function get_supplier($id)
+	public function get_supplier($id_supplier)
 	{
-		$data = $this->m_supplier->get_supplier($id);
+		$data = $this->m_supplier->get_supplier($id_supplier);
 		echo json_encode($data);
 	}
 
 	public function update_supplier()
 	{
 		$data = array(
+			'kd_supplier' => $this->input->post('kd_supplier'),
 			'nama' => $this->input->post('nama'),
 			'alamat' => $this->input->post('alamat'),
 			'ket' => $this->input->post('ket') 
 		);
-		$this->m_supplier->update_supplier(array('id' => $this->input->post('id')), $data);
+		$this->m_supplier->update_supplier(array('id_supplier' => $this->input->post('id_supplier')), $data);
 		echo json_encode(array("status" => TRUE));
 	}
 
-	public function delete_supplier($id)
+	public function delete_supplier($id_supplier)
 	{
-		$this->m_supplier->delete_supplier($id);
+		$this->m_supplier->delete_supplier($id_supplier);
 		echo json_encode(array("status" => TRUE));
 	}
 

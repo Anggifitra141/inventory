@@ -16,10 +16,10 @@ class M_user extends CI_model
 		return $query->result();
 	}
 	
-	public function get_user($id)
+	public function get_user($id_user)
 	{
 		$this->db->from($this->table);
-		$this->db->where('id', $id);
+		$this->db->where('id_user', $id_user);
 		$query = $this->db->get();
 		return  $query->row();
 	}
@@ -27,7 +27,7 @@ class M_user extends CI_model
 	public function tambah_user($data)
 	{
 		$this->db->insert($this->table, $data);
-		return $this->db->insert_id();
+		return $this->db->insert_id_user();
 	}
 
 	public function update_user($where, $data)
@@ -36,9 +36,9 @@ class M_user extends CI_model
 		return $this->db->affected_rows();
 	}
 
-	public function delete_user($id)
+	public function delete_user($id_user)
 	{
-		$this->db->where('id', $id);
+		$this->db->where('id_user', $id_user);
 		$this->db->delete($this->table);
 	}
 }

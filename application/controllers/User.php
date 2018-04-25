@@ -20,9 +20,9 @@ class User extends CI_Controller {
 		$this->load->view('app/layout', $data);
 	}
 
-	public function get_user($id)
+	public function get_user($id_user)
 	{
-		$data= $this->m_user->get_user($id);
+		$data= $this->m_user->get_user($id_user);
 		echo json_encode($data);
 	}
 
@@ -45,13 +45,13 @@ class User extends CI_Controller {
 			'fullname' => $this->input->post('fullname'),
 			'level'	   => $this->input->post('level'), 
 		);
-		$this->m_user->update_user(array('id' => $this->input->post('id')), $data);
+		$this->m_user->update_user(array('id_user' => $this->input->post('id_user')), $data);
 		echo json_decode(array("status" => TRUE));
 	}
 
-	public function delete_user($id)
+	public function delete_user($id_user)
 	{
-		$this->m_user->delete_user($id);
+		$this->m_user->delete_user($id_user);
 		echo json_encode(array("status" => TRUE));
 	}
 }

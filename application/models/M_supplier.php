@@ -16,10 +16,10 @@ class M_supplier extends CI_model
 		return $query->result();
 	}
 	
-	public function get_supplier($id)
+	public function get_supplier($id_supplier)
 	{
 		$this->db->from($this->table);
-		$this->db->where('id', $id);
+		$this->db->where('id_supplier', $id_supplier);
 		$query = $this->db->get();
 		return  $query->row();
 	}
@@ -27,7 +27,7 @@ class M_supplier extends CI_model
 	public function tambah_supplier($data)
 	{
 		$this->db->insert($this->table, $data);
-		return $this->db->insert_id();
+		return $this->db->insert_id_supplier();
 	}
 
 	public function update_Supplier($where, $data)
@@ -36,9 +36,9 @@ class M_supplier extends CI_model
 		return $this->db->affected_rows();
 	}
 
-	public function delete_supplier($id)
+	public function delete_supplier($id_supplier)
 	{
-		$this->db->where('id', $id);
+		$this->db->where('id_supplier', $id_supplier);
 		$this->db->delete($this->table);
 	}
 }

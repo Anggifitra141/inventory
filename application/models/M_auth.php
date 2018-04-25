@@ -17,7 +17,7 @@ class M_auth extends CI_model
       	$return = 1;
       		foreach($query->result() as $r){
         		$udata = [
-         		"id"=> $r->id,
+         		"id_user"=> $r->id_user,
           		"username"=> $r->username,
 	          	"fullname"=>$r->fullname,
 	          	"level"=>$r->level,
@@ -31,10 +31,21 @@ class M_auth extends CI_model
 
 	}
 
-	public function ganti_password($user_id, $password_baru)
+	public function cek_password($id_user, $password)
 	{
-		$query = $this->db->query("UPDATE user SET password='$password_baru' WHERE id='$user_id' ");
-		return $query;
+		$this->db->from('user');
+		$this->db->where('id_user', $id_user);
+		$this->db->where('password', $password);
+		$query = $this->db->get();
+		if ($query->num_rows()) {
+			return TRUE;
+		}else{
+			return FALSE;
+		}
 	}
-	
+	public function ganti_password($id_user, $password_baru)
+	{
+		$this->db->update("user", ["password"=>$password_baru], ["id_user"=>$id_user]);
+		return TRUE;
+	}
 }

@@ -96,8 +96,14 @@
                             </div>
                         </div>
                         <div class="form-group m-t-30 m-b-0">
+                            
+                            <div class="panel panel-default">
+                                <div class="text-center">
+                                    <small>Programmer App By: Anggi Fitrahandika</small>
+                                </div>
+                            </div>
                             <div class="text-center">
-                                <small style="font-weight: bold;">All Right Reserved</small>
+                                <small style="font-weight: bold;">© 2018. All rights reserved.</small>
                             </div>
                         </div>
                     </form>

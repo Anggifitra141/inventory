@@ -52,7 +52,7 @@
                 <!-- LOGO -->
                 <div class="topbar-left">
                     <div class="text-center">
-                        <a href="<?php echo base_url('app') ?>" class="logo"><span>INVENTORY</span></a>
+                        <a href="<?php echo base_url('app') ?>" class="logo"><i class="icon-c-logo">I</i><span>INVENTORY</span></a>
                         <!-- Image Logo here -->
                         <!--<a href="index.html" class="logo">-->
                             <!--<i class="icon-c-logo"> <img src="<?php echo base_url(); ?>assets/images/logo_sm.png" height="42"/> </i>-->
@@ -75,7 +75,7 @@
                             <ul class="nav navbar-nav navbar-right pull-right">
                                 <li class="dropdown top-menu-item-xs">
                                     <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
-                                        <i class="icon-bell"></i> <span class="badge badge-xs badge-danger">3</span>
+                                        <i class="fa fa-bell-o"></i> <span class="badge badge-xs badge-danger">3</span>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-lg">
                                         <li class="notifi-title"><span class="label label-default pull-right">New 3</span>Notification</li>
@@ -165,22 +165,22 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="<?php echo base_url('app/barang') ?>" class="waves-effect"><i class="fa fa-database"></i> <span> Data Barang </span> </a>   
+                                <a href="<?php echo base_url('barang') ?>" class="waves-effect"><i class="fa fa-database"></i> <span> Data Barang </span> </a>   
                             </li>
 
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-shopping-cart"></i><span> Pembelian </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="tables-basic.html">Data pembelian</a></li>
-                                    <li><a href="tables-datatable.html">Transaksi Pembelian</a></li>
+                                    <li><a href="<?php echo site_url('pembelian/barang_pembelian'); ?>">Data pembelian</a></li>
+                                    <li><a href="<?php echo site_url('pembelian/d_pembelian');?>">Transaksi Pembelian</a></li>
                                 </ul>
                             </li>
 
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-shopping-cart"></i> <span> Penjualan </span><span class="menu-arrow"></span> </a>
                                 <ul class="list-unstyled">
-                                    <li><a href="tables-basic.html">Data Penjualan</a></li>
-                                    <li><a href="tables-datatable.html">Transaksi penjualan</a></li>
+                                    <li><a href="<?php echo site_url('penjualan/barang_penjualan') ?>">Data Penjualan</a></li>
+                                    <li><a href="<?php echo site_url('penjualan/d_penjualan') ?>">Transaksi penjualan</a></li>
                                 </ul>
                             </li>
 
@@ -252,117 +252,6 @@
             <!-- End Right content here -->
             <!-- ============================================================== -->
 
-
-            <!-- Right Sidebar -->
-            <div class="side-bar right-bar nicescroll">
-                <h4 class="text-center">Chat</h4>
-                <div class="contact-list nicescroll">
-                    <ul class="list-group contacts-list">
-                        <li class="list-group-item">
-                            <a href="#">
-                                <div class="avatar">
-                                    <img src="<?php echo base_url(); ?>assets/images/users/avatar-1.jpg" alt="">
-                                </div>
-                                <span class="name">Chadengle</span>
-                                <i class="fa fa-circle online"></i>
-                            </a>
-                            <span class="clearfix"></span>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">
-                                <div class="avatar">
-                                    <img src="<?php echo base_url(); ?>assets/images/users/avatar-2.jpg" alt="">
-                                </div>
-                                <span class="name">Tomaslau</span>
-                                <i class="fa fa-circle online"></i>
-                            </a>
-                            <span class="clearfix"></span>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">
-                                <div class="avatar">
-                                    <img src="<?php echo base_url(); ?>assets/images/users/avatar-3.jpg" alt="">
-                                </div>
-                                <span class="name">Stillnotdavid</span>
-                                <i class="fa fa-circle online"></i>
-                            </a>
-                            <span class="clearfix"></span>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">
-                                <div class="avatar">
-                                    <img src="<?php echo base_url(); ?>assets/images/users/avatar-4.jpg" alt="">
-                                </div>
-                                <span class="name">Kurafire</span>
-                                <i class="fa fa-circle online"></i>
-                            </a>
-                            <span class="clearfix"></span>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">
-                                <div class="avatar">
-                                    <img src="<?php echo base_url(); ?>assets/images/users/avatar-5.jpg" alt="">
-                                </div>
-                                <span class="name">Shahedk</span>
-                                <i class="fa fa-circle away"></i>
-                            </a>
-                            <span class="clearfix"></span>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">
-                                <div class="avatar">
-                                    <img src="<?php echo base_url(); ?>assets/images/users/avatar-6.jpg" alt="">
-                                </div>
-                                <span class="name">Adhamdannaway</span>
-                                <i class="fa fa-circle away"></i>
-                            </a>
-                            <span class="clearfix"></span>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">
-                                <div class="avatar">
-                                    <img src="<?php echo base_url(); ?>assets/images/users/avatar-7.jpg" alt="">
-                                </div>
-                                <span class="name">Ok</span>
-                                <i class="fa fa-circle away"></i>
-                            </a>
-                            <span class="clearfix"></span>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">
-                                <div class="avatar">
-                                    <img src="<?php echo base_url(); ?>assets/images/users/avatar-8.jpg" alt="">
-                                </div>
-                                <span class="name">Arashasghari</span>
-                                <i class="fa fa-circle offline"></i>
-                            </a>
-                            <span class="clearfix"></span>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">
-                                <div class="avatar">
-                                    <img src="<?php echo base_url(); ?>assets/images/users/avatar-9.jpg" alt="">
-                                </div>
-                                <span class="name">Joshaustin</span>
-                                <i class="fa fa-circle offline"></i>
-                            </a>
-                            <span class="clearfix"></span>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">
-                                <div class="avatar">
-                                    <img src="<?php echo base_url(); ?>assets/images/users/avatar-10.jpg" alt="">
-                                </div>
-                                <span class="name">Sortino</span>
-                                <i class="fa fa-circle offline"></i>
-                            </a>
-                            <span class="clearfix"></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /Right-bar -->
-
         </div>
         <!-- END wrapper -->
 
@@ -398,19 +287,6 @@
 
         <script src="<?php echo base_url(); ?>assets/js/jquery.core.js"></script>
         <script src="<?php echo base_url(); ?>assets/js/jquery.app.js"></script>
-
-        <script type="text/javascript">
-            jQuery(document).ready(function($) {
-                $('.counter').counterUp({
-                    delay: 100,
-                    time: 1200
-                });
-
-                $(".knob").knob();
-
-            });
-
-        </script>
 
 
 
