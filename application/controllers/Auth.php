@@ -23,15 +23,9 @@ class Auth extends CI_Controller {
 			'username' => $username , 
 			'password' => md5($password)
 			);
-		$cek = $this->m_auth->login("user", $where)->num_rows();
-		if ($cek > 0) {
-					$data_session = array(
-						'username' 	=> $username ,
-						'level'    	=> $level,
-						'status' 	=> 'login' 
-					);
+		$cek = $this->m_auth->login("user", $where);
+		if ($cek == TRUE) {
 					
-			$this->session->set_userdata($data_session);
 			redirect ('app');		
 		}else{
 			$data = array();

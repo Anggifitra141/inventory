@@ -91,8 +91,13 @@
 
                         <div class="form-group m-t-30 m-b-0">
                             <div class="col-sm-12">
-                                <a href="<?php echo base_url(); ?>page-recoverpw.html" class="text-dark"><i class="fa fa-lock m-r-5"></i> Forgot
+                                <a href="<?php echo base_url(); ?>" class="text-dark"><i class="fa fa-lock m-r-5"></i> Forgot
                                     your password?</a>
+                            </div>
+                        </div>
+                        <div class="form-group m-t-30 m-b-0">
+                            <div class="text-center">
+                                <small style="font-weight: bold;">All Right Reserved</small>
                             </div>
                         </div>
                     </form>

@@ -52,7 +52,7 @@
                 <!-- LOGO -->
                 <div class="topbar-left">
                     <div class="text-center">
-                        <a href="index.html" class="logo"><i class="icon-c-logo">IVT</i><span>INVENTORY</span></a>
+                        <a href="<?php echo base_url('app') ?>" class="logo"><span>INVENTORY</span></a>
                         <!-- Image Logo here -->
                         <!--<a href="index.html" class="logo">-->
                             <!--<i class="icon-c-logo"> <img src="<?php echo base_url(); ?>assets/images/logo_sm.png" height="42"/> </i>-->
@@ -125,51 +125,6 @@
                                               </div>
                                            </a>
 
-                                           <!-- list item-->
-                                           <a href="javascript:void(0);" class="list-group-item">
-                                              <div class="media">
-                                                 <div class="pull-left p-r-10">
-                                                    <em class="fa fa-user-plus noti-pink"></em>
-                                                 </div>
-                                                 <div class="media-body">
-                                                    <h5 class="media-heading">New user registered</h5>
-                                                    <p class="m-0">
-                                                        <small>You have 10 unread messages</small>
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </a>
-
-                                            <!-- list item-->
-                                           <a href="javascript:void(0);" class="list-group-item">
-                                              <div class="media">
-                                                 <div class="pull-left p-r-10">
-                                                    <em class="fa fa-diamond noti-primary"></em>
-                                                 </div>
-                                                 <div class="media-body">
-                                                    <h5 class="media-heading">A new order has been placed A new order has been placed</h5>
-                                                    <p class="m-0">
-                                                        <small>There are new settings available</small>
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </a>
-
-                                           <!-- list item-->
-                                           <a href="javascript:void(0);" class="list-group-item">
-                                              <div class="media">
-                                                 <div class="pull-left p-r-10">
-                                                    <em class="fa fa-cog noti-warning"></em>
-                                                 </div>
-                                                 <div class="media-body">
-                                                    <h5 class="media-heading">New settings</h5>
-                                                    <p class="m-0">
-                                                        <small>There are new settings available</small>
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </a>
-                                        </li>
                                         <li>
                                             <a href="javascript:void(0);" class="list-group-item text-right">
                                                 <small class="font-600">See all notifications</small>
@@ -181,9 +136,9 @@
                                 <li class="dropdown top-menu-item-xs">
                                     <a href="#" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true"><img src="<?php echo base_url(); ?>assets/images/users/profile.png" alt="user-img" class="img-circle"> </a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="javascript:void(0)"><i class="ti-user m-r-10 text-custom"></i> Profile</a></li>
+                                        <li><a href="<?php echo base_url('profile') ?>"><i class="ti-user m-r-10 text-custom"></i> Profile</a></li>
                                         <li class="divider"></li>
-                                        <li><a href="javascript:void(0)"><i class="ti-power-off m-r-10 text-danger"></i> Logout</a></li>
+                                        <li><a href="<?php echo base_url('auth/logout')?>"><i class="ti-power-off m-r-10 text-danger"></i> Logout</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -230,7 +185,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="<?php echo site_url('app/supplier'); ?>" class="waves-effect"><i class="fa fa-university"></i><span> Supplier </span> </a>
+                                <a href="<?php echo site_url('supplier'); ?>" class="waves-effect"><i class="fa fa-university"></i><span> Supplier </span> </a>
                             </li>
 
                             <li class="has_sub">
@@ -245,11 +200,11 @@
                             <li class="text-muted menu-title">Settings</li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-users"></i><span> Users </span></a>
+                                <a href="<?php echo site_url('user') ?>" class="waves-effect"><i class="fa fa-users"></i><span> Users </span></a>
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-user"></i><span> Profile </span></a>
+                                <a href="<?php echo site_url('profile'); ?>" class="waves-effect"><i class="fa fa-user"></i><span> Profile </span></a>
                             </li>
 
                             <li class="has_sub">
@@ -287,7 +242,7 @@
                 </div> <!-- content -->
 
                 <footer class="footer text-right">
-                    © 2017. All rights reserved.
+                    © 2018. All rights reserved.
                 </footer>
 
             </div>
