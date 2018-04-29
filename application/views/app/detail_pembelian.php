@@ -11,7 +11,7 @@
             <div class="col-sm-12">
                 <div class="card-box table-responsive">
                     <div class="row" style="padding-bottom: 20px; padding-left: 10px;">
-                        <button class="btn btn-success"><i class="fa fa-plus"></i> Transaksi Pembelian</button>
+                        <a href="<?php echo site_url('pembelian/transaksi_pembelian') ?>" class="btn btn-success"><i class="fa fa-plus"></i> Transaksi Pembelian</a>
                     </div> 
                     <table id="pembelian" class="table table-striped table-bordered">
                         <thead>
@@ -36,6 +36,7 @@
                             <td></td>
                             <td>
                                 <button class="btn btn-warning" title="Edit"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-primary" title="Detail"><i class="fa fa-search"></i></button>
 								<button class="btn btn-danger"><i class="fa fa-trash"></i></button>
                             </td>
                         </tr>

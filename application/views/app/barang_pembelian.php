@@ -15,7 +15,6 @@
                         <thead>
                         <tr>
                             <th width="1">No</th>
-                            <th>KD Pembelian</th>
                             <th>Nama Barang</th>
                             <th>Satuan</th>
                             <th>Harga beli</th>
@@ -28,7 +27,6 @@
                         	<?php $no=1; ?>
                         <tr>
                             <td><?php echo $no++; ?></td>
-                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>

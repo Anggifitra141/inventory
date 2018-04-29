@@ -24,4 +24,11 @@ class Pembelian extends CI_Controller {
 		$data['content'] = $this->load->view('app/detail_pembelian', $data, TRUE);
 		$this->load->view('app/layout', $data);
 	}
+
+	public function transaksi_pembelian()
+	{
+		$data= [];
+		$data['content'] = $this->load->view('app/transaksi_pembelian', $data, TRUE);
+		$this->load->view('app/layout', $data);
+	}
 }
